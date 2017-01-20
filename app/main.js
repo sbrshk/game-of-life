@@ -2,9 +2,6 @@ const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
-const builder = require("electron-builder")
-const Platform = builder.Platform
-
 const path = require('path')
 const url = require('url')
 
@@ -14,7 +11,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 740, height: 630})
 
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, "index.html"),
+    pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true
   }))

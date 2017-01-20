@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
-	<head>
-  		<title>Conway's Game of Life</title>
-		<style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Conway's Game of Life</title>
+    <style>
 			.wrapper {
 				width: 720;
 			}
@@ -14,7 +16,7 @@
 				float: left;
 			}
 			.btn {
-				width: 100;
+				width: 100%;
 				height: 40;
 				margin: 5;
 				font-family: sans-serif;
@@ -25,9 +27,9 @@
 			}
 		</style>
 		<script src="life.js"></script>
-	</head>
-	 <body onload="initField();">
-		<div class="wrapper">
+  </head>
+  <body onload="initField();">
+    <div class="wrapper">
   			<div class="field"><canvas height="610" width="610" id="cnvs"></canvas></div>
 			<div class="buttons">
 				<button class="btn" onclick="initRandom()">Init random</button><br>
@@ -43,5 +45,15 @@
 				<div class="generation" id="generation"></div>
 			</div>
 		</div>
-  	</body>
+    <!-- <h1>Hello World!</h1> -->
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <!-- We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>. -->
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
 </html>

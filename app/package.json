@@ -1,22 +1,23 @@
 {
-  	"name": "game_of_life",
+	"name": "game-of-life",
 	"productName": "Game of Life",
-	"description": "Conway's 'Game of Life' built with javascript and Electron",
-	"version": "1.0.0",
-	"author": "Sophya Borushko <alan.turing39@gmail.com>",
-	"license": "MIT",
+	"version": "1.1.0",
+	"description": "Cellular automaton 'Game of Life' discovered by John Conway in 1970. Created with JavaScript and Electron.",
 	"main": "main.js",
-	"devDependencies": {
-		"electron": "^1.4.4",
-		"electron-packager": "^8.1.10"
-	},
 	"scripts": {
-		"test": "npm test",
 		"start": "electron ."
-  	}, 
-	"repository": {
-		"type": "git", 
-		"url": "git+https://github.com/CellarD0-0r/game-of-life.git"
-	},
-	"homepage": "https://github.com/CellarD0-0r/game-of-life#readme"
+  	},
+  	"repository": "https://github.com/CellarD0-0r/game-of-life",
+  	"keywords": [
+		"Electron",
+		"life",
+		"Conway",
+		"game",
+		"automaton"
+	],
+	"author": "CellarD0-0r <alan.turing39@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+    	"electron": "^1.4.1"
+  	}
 }
