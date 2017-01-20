@@ -1,0 +1,18 @@
+{
+  	"build": {
+    	"appId": "life"
+  	},
+  	"scripts": {
+	  	"preinstall": "node -e 'process.exit(0)'",
+    	"postinstall": "install-app-deps",
+    	"start": "electron ./app",
+    	"dev": "NODE_ENV='development' npm run start",
+    	"dist": "build --linux deb --x64"
+  	},
+  	"devDependencies": {
+    	"electron-builder": "^11.4.4",
+    	"electron-packager": "^8.5.0",
+    	"electron-prebuilt": "^1.4.13",
+    	"electron-rebuild": "^1.5.7"
+  	}
+}

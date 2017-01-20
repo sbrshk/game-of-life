@@ -1,0 +1,22 @@
+{
+  	"name": "game_of_life",
+	"productName": "Game of Life",
+	"description": "Conway's 'Game of Life' built with javascript and Electron",
+	"version": "1.0.0",
+	"author": "Sophya Borushko <alan.turing39@gmail.com>",
+	"license": "MIT",
+	"main": "main.js",
+	"devDependencies": {
+		"electron": "^1.4.4",
+		"electron-packager": "^8.1.10"
+	},
+	"scripts": {
+		"test": "npm test",
+		"start": "electron ."
+  	}, 
+	"repository": {
+		"type": "git", 
+		"url": "git+https://github.com/CellarD0-0r/game-of-life.git"
+	},
+	"homepage": "https://github.com/CellarD0-0r/game-of-life#readme"
+}

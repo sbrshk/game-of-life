@@ -1,0 +1,47 @@
+<html>
+	<head>
+  		<title>Conway's Game of Life</title>
+		<style>
+			.wrapper {
+				width: 720;
+			}
+			.field {
+				width: 610;
+				float: left;
+			}
+			.buttons {
+				width: 100;
+				float: left;
+			}
+			.btn {
+				width: 100;
+				height: 40;
+				margin: 5;
+				font-family: sans-serif;
+			}
+			.generation {
+				font-family: sans-serif;
+				text-align: center;
+			}
+		</style>
+		<script src="life.js"></script>
+	</head>
+	 <body onload="initField();">
+		<div class="wrapper">
+  			<div class="field"><canvas height="610" width="610" id="cnvs"></canvas></div>
+			<div class="buttons">
+				<button class="btn" onclick="initRandom()">Init random</button><br>
+				<button class="btn" onclick="initGrid()">Init grid</button><br>
+				<button class="btn" onclick="initGun()">Init glider gun</button><br>
+				<button class="btn" onclick="initBiGun()">Init Bi-gun</button><br>
+				<br>
+				<button class="btn" onclick="stop()">Stop</button><br>
+				<button class="btn" onclick="continueUpdating()">Continue</button><br>
+				<button class="btn" onclick="initField()">Clear</button><br>
+				<br>
+				<br>
+				<div class="generation" id="generation"></div>
+			</div>
+		</div>
+  	</body>
+</html>
