@@ -1,13 +1,17 @@
 {
   "build": {
-    "appId": "life"
+    "appId": "life",
+    "win": {
+      "iconUrl": "https://raw.githubusercontent.com/CellarD0-0r/game-of-life/master/build/icon.ico"
+    }
   },
   "scripts": {
     "preinstall": "node -e 'process.exit(0)'",
     "postinstall": "install-app-deps",
     "start": "electron ./app",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "build --linux deb --x64"
+	"lindist": "build --linux deb --x64",
+    "windist": "build --win --x64"
   },
   "devDependencies": {
     "electron-builder": "^11.4.4",
