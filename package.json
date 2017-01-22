@@ -8,7 +8,6 @@
   },
   "scripts": {
     "preinstall": "node -e 'process.exit(0)'",
-    "postinstall": "install-app-deps",
     "start": "electron ./app",
     "dev": "NODE_ENV='development' npm run start",
     "lindist": "build --linux deb --x64",
